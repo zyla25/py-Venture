@@ -347,6 +347,7 @@ body {
     /* Styles for continue button */
 
     .continue-btn {
+        display: none;
         background-image: url(../images/background/buttons.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
