@@ -160,6 +160,9 @@ function loadingFadeOut() {
     image5.classList.add("animation");
     image6.classList.add("animation");
     image7.classList.add("animation");
+    setTimeout(() => {
+        continueBtn.style.display = "flex";
+    }, 20000);
     continueBtn.classList.add("animation");
 
     setTimeout(playAudio, 1000);
