@@ -77,12 +77,12 @@ function sfxVolumeAdjust() {
 let settingModal = document.getElementById("setting-modal");
 
 let settingBtn = document.getElementById("setting-btn").addEventListener("click", function() {
-    settingModal.style.display = "grid";
+    settingModal.style.zIndex = "20";
 });
 
 // Function for Closing Setting Modal
 let closeSettings = document.getElementById("close").addEventListener("click", function() {
-    settingModal.style.display = "none";
+    settingModal.style.zIndex = "-99";
 });
 
 // ===================================================================== SETTING FUNCTIONS ============================================================
