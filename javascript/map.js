@@ -34,7 +34,7 @@ window.onload = function() {
 
 
 // ============================================================== BACKGROUND MUSIC ===================================================================
-let bgMusic = new Audio ("audio/BGM/Map.mp3");
+let bgMusic = new Audio ("audio/bgm/Map.mp3");
 
 // Background Volume Controller Function
 let bgVolume = document.getElementById("bgVolume");
