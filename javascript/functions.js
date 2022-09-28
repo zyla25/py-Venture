@@ -2,7 +2,7 @@
 // ===================================================================== SOUND EFFECTS ================================================================
 
 // Sound Effects
-let sfxMusic = new Audio ("Audio/SFX/Click.mp3");
+let sfxMusic = new Audio ("audio/sfx/Click.mp3");
 
 // Play sfxMusic if button is click
 
