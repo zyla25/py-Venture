@@ -1,4 +1,4 @@
-let bgMusic = new Audio ("audio/BGM/Title.mp3");
+let bgMusic = new Audio ("audio/bgm/Title.mp3");
 
 let timer = 0;
 let percentage = 0;
@@ -54,7 +54,7 @@ function bgVolumeAdjust() {
 // ===================================================================== SOUND EFFECTS ================================================================
 
 // Play sfxMusic if button is click
-let sfxMusic = new Audio ("audio/SFX/Click.mp3");
+let sfxMusic = new Audio ("audio/sfx/Click.mp3");
 
 function buttonClick() {
     sfxMusic.play();
