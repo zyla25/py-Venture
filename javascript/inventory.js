@@ -2,8 +2,8 @@ let bgMusic = new Audio ("audio/bgm/Inventory.mp3");
 
 window.onload = function(){
     let bgVolumeValue = parseInt(localStorage.getItem("bgValue"));
-    bgVolume.value = bgVolumeValue;
-    bgMusic.volume = bgVolume.value/100;
+//     bgVolume.value = bgVolumeValue;
+//     bgMusic.volume = bgVolume.value/100;
 };
 // ===================================================================== BACKGROUND MUSIC =============================================================
 
@@ -15,8 +15,8 @@ let bgVolume = document.getElementById("bgVolume");
 
 function bgVolumeAdjust() {
         bgMusic.volume = bgVolume.value / 100;
-        let bgMusicValue = bgMusic.volume * 100;
-        localStorage.setItem("bgValue", bgMusicValue);
+//         let bgMusicValue = bgMusic.volume * 100;
+//         localStorage.setItem("bgValue", bgMusicValue);
 }
 
 // ===================================================================== BACKGROUND MUSIC =============================================================
