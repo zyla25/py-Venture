@@ -83,32 +83,32 @@ let powerToPass;
 let powerProperties = [
 
     {
-        imageDirectory: "../images/power-ups/harddrive.png",
+        imageDirectory: "images/power-ups/harddrive.png",
         name: "HDD",
         description: "+1hp"
         
     },
 
     {
-        imageDirectory: "../images/power-ups/cpu.png",
+        imageDirectory: "images/power-ups/cpu.png",
         name: "CPU",
         description: "+5s time"
     },
 
     {
-        imageDirectory: "../images/power-ups/ram.png",
+        imageDirectory: "images/power-ups/ram.png",
         name: "RAM",
         description: "+1 damage"
     },
 
     {
-        imageDirectory: "../images/power-ups/fan.png",
+        imageDirectory: "images/power-ups/fan.png",
         name: "FAN",
         description: "25% chance to evade enemy attack"
     },
 
     {
-        imageDirectory: "../images/power-ups/psu.png",
+        imageDirectory: "images/power-ups/psu.png",
         name: "PSU",
         description: "Heal 1hp every opponent defeated"
     },
