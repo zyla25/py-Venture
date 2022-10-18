@@ -31,10 +31,6 @@
 //     settingModal.style.display = "none";
 // });
 
-helmet({
-      crossOriginResourcePolicy: false,
-})
-
 let timer = 0;
 let percentage = 0;
 let loadInterval;
