@@ -70,7 +70,7 @@ body {
     
     .wrapper {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         background-image: url(../images/background/menu-bg.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
