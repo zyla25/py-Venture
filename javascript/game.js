@@ -414,13 +414,13 @@ leftBtn.addEventListener('click', ()=> {
         if(scientist.classList.contains('charTalking')) {
             scientist.classList.remove('charTalking');
             arvi1Script.classList.add('charTalking');
-            arvi1Script.src = "Images/Characters/arvi/avi2-script.png";
-            scientist.src = "Images/Characters/arvi/scientist 2.png";
+            arvi1Script.src = "images/Characters/arvi/avi2-script.png";
+            scientist.src = "images/Characters/arvi/scientist 2.png";
         } else if(arvi1Script.classList.contains('charTalking')) {
             scientist.classList.add('charTalking');
             arvi1Script.classList.remove('charTalking');
-            arvi1Script.src = "Images/Characters/arvi/avi1-script.png";
-            scientist.src = "Images/Characters/arvi/scientist 1.png";
+            arvi1Script.src = "images/Characters/arvi/avi1-script.png";
+            scientist.src = "images/Characters/arvi/scientist 1.png";
         }
     }
 
@@ -433,13 +433,13 @@ rightBtn.addEventListener('click', ()=> {
         if(scientist.classList.contains('charTalking')) {
             scientist.classList.remove('charTalking');
             arvi1Script.classList.add('charTalking');
-            arvi1Script.src = "Images/Characters/arvi/avi2-script.png";
-            scientist.src = "Images/Characters/arvi/scientist 2.png";
+            arvi1Script.src = "images/Characters/arvi/avi2-script.png";
+            scientist.src = "images/Characters/arvi/scientist 2.png";
         } else if(arvi1Script.classList.contains('charTalking')) {
             scientist.classList.add('charTalking');
             arvi1Script.classList.remove('charTalking');
-            arvi1Script.src = "Images/Characters/arvi/avi1-script.png";
-            scientist.src = "Images/Characters/arvi/scientist 1.png";
+            arvi1Script.src = "images/Characters/arvi/avi1-script.png";
+            scientist.src = "images/Characters/arvi/scientist 1.png";
         }
     }
     let scriptNo = enemyObject[level].script.scriptNo;
@@ -971,7 +971,7 @@ function arviAttackEnemy() {
     }
 
     function attackEvent1() {
-        arvi.src = "Images/Characters/arvi/avi 3.png";
+        arvi.src = "images/Characters/arvi/avi 3.png";
         arvi.classList.remove("movement");
         arvi.classList.add("attackAnimation");
         enemy.classList.add("enemyIsAttackAnimation");
@@ -1014,7 +1014,7 @@ function arviAttackEnemy() {
     }
     
     function attackEvent2() {
-        arvi.src = "Images/Characters/arvi/avi 1.png";
+        arvi.src = "images/Characters/arvi/avi 1.png";
         arvi.classList.add("movement");
         arvi.classList.remove("attackAnimation");
         enemy.classList.remove("enemyIsAttackAnimation");
@@ -1086,14 +1086,14 @@ function enemyAttackArvi() {
 
     // Animation if Arvi is Attacked by the Enemy 
     function wrongEvent1() {
-        arvi.src = "Images/Characters/arvi/avi 2.png";
+        arvi.src = "images/Characters/arvi/avi 2.png";
         enemy.classList.add("enemyAttackAnimation");
         arvi.classList.add("arviIsAttackAnimation");
         arviHealthText.innerHTML = arviHealth + " / " + arviTotalHealth;
     }
     
     function wrongEvent2() {
-        arvi.src = "Images/Characters/arvi/avi 1.png";
+        arvi.src = "images/Characters/arvi/avi 1.png";
         enemy.classList.remove("enemyAttackAnimation");
         arvi.classList.remove("arviIsAttackAnimation");
     }
@@ -1173,7 +1173,7 @@ function gameOver() {
         }, 1000);
         enemy.classList.add("new-power-up");
         setTimeout(() => {
-            enemy.setAttribute('src','Images/Power-ups/cpu.png');
+            enemy.setAttribute('src','images/Power-ups/cpu.png');
             enemy.style.cursor = "pointer";
         }, 1000);
 
