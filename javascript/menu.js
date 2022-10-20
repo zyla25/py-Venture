@@ -9,6 +9,23 @@ let percentText = document.getElementById("percent-container");
 window.onload = function(){
     percentText.classList.add("fadeIn-animation")
     setTimeout(loadInterval = setInterval(percentInterval,1500), 0);
+    
+    let bgVolumeValue = (localStorage.getItem("bgValue"));
+
+    if(bgVolumeValue === null) {
+        localStorage.setItem("bgValue",100);
+        bgMusic.volume = 100/100;
+    } else {
+        bgVolume.value = parseInt(bgVolumeValue);
+        bgMusic.volume = bgVolume.value/100;
+    }
+    
+
+    if(localStorage.getItem("equipment") === null) {
+        localStorage.setItem("equipment", -1);
+   } else {
+        return;
+   }
 };
 
 function percentInterval() {
