@@ -971,7 +971,7 @@ function arviAttackEnemy() {
     }
 
     function attackEvent1() {
-        arvi.src = "images/Characters/arvi/avi 3.png";
+        arvi.src = "images/characters/arvi/avi 3.png";
         arvi.classList.remove("movement");
         arvi.classList.add("attackAnimation");
         enemy.classList.add("enemyIsAttackAnimation");
@@ -1014,7 +1014,7 @@ function arviAttackEnemy() {
     }
     
     function attackEvent2() {
-        arvi.src = "images/Characters/arvi/avi 1.png";
+        arvi.src = "images/characters/arvi/avi 1.png";
         arvi.classList.add("movement");
         arvi.classList.remove("attackAnimation");
         enemy.classList.remove("enemyIsAttackAnimation");
@@ -1086,14 +1086,14 @@ function enemyAttackArvi() {
 
     // Animation if Arvi is Attacked by the Enemy 
     function wrongEvent1() {
-        arvi.src = "images/Characters/arvi/avi 2.png";
+        arvi.src = "images/characters/arvi/avi 2.png";
         enemy.classList.add("enemyAttackAnimation");
         arvi.classList.add("arviIsAttackAnimation");
         arviHealthText.innerHTML = arviHealth + " / " + arviTotalHealth;
     }
     
     function wrongEvent2() {
-        arvi.src = "images/Characters/arvi/avi 1.png";
+        arvi.src = "images/characters/arvi/avi 1.png";
         enemy.classList.remove("enemyAttackAnimation");
         arvi.classList.remove("arviIsAttackAnimation");
     }
