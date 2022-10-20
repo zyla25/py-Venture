@@ -414,13 +414,13 @@ leftBtn.addEventListener('click', ()=> {
         if(scientist.classList.contains('charTalking')) {
             scientist.classList.remove('charTalking');
             arvi1Script.classList.add('charTalking');
-            arvi1Script.src = "images/Characters/arvi/avi2-script.png";
-            scientist.src = "images/Characters/arvi/scientist 2.png";
+            arvi1Script.src = "images/characters/arvi/avi2-script.png";
+            scientist.src = "images/characters/arvi/scientist 2.png";
         } else if(arvi1Script.classList.contains('charTalking')) {
             scientist.classList.add('charTalking');
             arvi1Script.classList.remove('charTalking');
-            arvi1Script.src = "images/Characters/arvi/avi1-script.png";
-            scientist.src = "images/Characters/arvi/scientist 1.png";
+            arvi1Script.src = "images/characters/arvi/avi1-script.png";
+            scientist.src = "images/characters/arvi/scientist 1.png";
         }
     }
 
@@ -433,13 +433,13 @@ rightBtn.addEventListener('click', ()=> {
         if(scientist.classList.contains('charTalking')) {
             scientist.classList.remove('charTalking');
             arvi1Script.classList.add('charTalking');
-            arvi1Script.src = "images/Characters/arvi/avi2-script.png";
-            scientist.src = "images/Characters/arvi/scientist 2.png";
+            arvi1Script.src = "images/characters/arvi/avi2-script.png";
+            scientist.src = "images/characters/arvi/scientist 2.png";
         } else if(arvi1Script.classList.contains('charTalking')) {
             scientist.classList.add('charTalking');
             arvi1Script.classList.remove('charTalking');
-            arvi1Script.src = "images/Characters/arvi/avi1-script.png";
-            scientist.src = "images/Characters/arvi/scientist 1.png";
+            arvi1Script.src = "images/characters/arvi/avi1-script.png";
+            scientist.src = "images/characters/arvi/scientist 1.png";
         }
     }
     let scriptNo = enemyObject[level].script.scriptNo;
