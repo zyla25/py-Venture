@@ -76,7 +76,7 @@ a {
     /* Loader2-Wrapper */
     .loader2-wrapper {
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
         position: absolute;
         display: flex;
         justify-content: center;
