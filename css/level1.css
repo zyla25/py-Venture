@@ -82,7 +82,7 @@ body {
         justify-content: center;
         align-items: center;
         background-color: white;
-        z-index: 20;
+        z-index: 999;
     }
 
     .loader-container {
