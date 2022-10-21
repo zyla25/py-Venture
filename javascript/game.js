@@ -4,6 +4,46 @@
 //     return "Changes you made may not be saved.";
 // }
 
+let timing = 0;
+let percentage = 0;
+let loadInterval;
+let loaderWrapper = document.getElementById("loader-wrapper");
+let percentText = document.getElementById("percent-container");
+
+window.onload = function(){
+    percentText.classList.add("fadeIn-animation")
+    setTimeout(loadInterval = setInterval(percentInterval,1500), 0);
+    lvl(0);
+};
+
+function percentInterval() {
+
+    if(timing<6){
+        percentText.innerHTML = percentage + "<span class='percent-span'>%</span>";
+        percentage += 20;
+        timing++;
+    } else{
+        percentText.innerHTML = "Click Here";
+        percentText.classList.add("blinkingClickHere");
+        percentText.removeAttribute("disabled", "disabled");
+        clearInterval(loadInterval);
+        percentText.addEventListener("click", loadingFadeOut);
+    }
+        
+}
+
+
+function loadingFadeOut() {
+    loaderWrapper.classList.add("loadingFadeOut");
+    setTimeout(function(){
+        loaderWrapper.style.display = "none";
+    },2000);
+    // bgMusic.play();
+    // bgMusic.setAttribute("loop", "loop");
+    
+}
+
+
 let randomNumber = Math.floor(Math.random() * 9);
 let questionNumber = randomNumber;
 let doneQuestion = [];
@@ -53,19 +93,13 @@ let powerUp = parseInt(localStorage.getItem('equipment'));
 // Onload Function that will check what level the user is
 
 function lvl(dataHere) {
-    
-    switch (parseInt(dataHere)) {
-        case 0: 
-            level = 0;
-            enemyHealth = 9;
-            enemyTotalHealth = 9;
-            timer = 30;
-            timerHolder = timer;
-            checkPowerUp(powerUp);
-            charscript.innerHTML = enemyObject[dataHere].script.scriptText[scriptIndex];
-            break;
-    }
-
+    level = 0;
+    enemyHealth = 9;
+    enemyTotalHealth = 9;
+    timer = 30;
+    timerHolder = timer;
+    checkPowerUp(powerUp);
+    charscript.innerHTML = enemyObject[dataHere].script.scriptText[scriptIndex];
 }
 
 
