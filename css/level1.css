@@ -16,13 +16,13 @@ a {
 body {
     width: 100%;
     height: 100vh;
-/*     overflow: hidden; */
+    overflow: hidden;
 }
 
 /* Style for Wrapper */
 
 .wrapper, .setting-modal, 
-.arvi-attack-modal, .enemy-attack-modal {
+.arvi-attack-modal, .enemy-attack-modal, .loader-wrapper{
     display: none;
 }
 
