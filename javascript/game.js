@@ -94,8 +94,8 @@ let powerUp = parseInt(localStorage.getItem('equipment'));
 
 function lvl(dataHere) {
     level = 0;
-    enemyHealth = 9;
-    enemyTotalHealth = 9;
+    enemyHealth = 3;
+    enemyTotalHealth = 3;
     timer = 30;
     timerHolder = timer;
     checkPowerUp(powerUp);
