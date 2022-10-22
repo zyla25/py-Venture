@@ -757,8 +757,8 @@ body {
         position: absolute;
         background-color: rgba(0, 0, 0, 0.742);
         z-index: -50;
-        top: 0;
-        left: 0;
+/*         top: 0;
+        left: 0; */
     }
 
     .win-container {
@@ -788,19 +788,21 @@ body {
         padding: 10px 40px;
         font-size: 2rem;
         cursor: pointer;
+        z-index: 99;
     }
 
     .lose-container {
         position: absolute;
         width: 300px;
         height: 300px;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         color: white;
         background-image: url(../images/loader/lose\ bg.png);
         background-size: 100% 100%;
+        z-index: -99;
     }
 
     .try-again {
