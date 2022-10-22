@@ -1213,12 +1213,14 @@ function gameOver() {
 
         enemy.addEventListener("click", ()=>{
             winModal.style.zIndex = "99";
-            winContainer.style.display = "flex";
+//             winContainer.style.zIndex = "99";
+//             loseContainer.style.zIndex = "-99";
         });
 
     } else if(arviHealth <= 0) {
         winModal.style.zIndex = "99";
-        loseContainer.style.display = "flex";
+        winContainer.style.zIndex = "-99";
+        loseContainer.style.zIndex = "99";
     }
 }
 
