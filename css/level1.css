@@ -757,8 +757,8 @@ body {
         position: absolute;
         background-color: rgba(0, 0, 0, 0.742);
         z-index: -99;
-/*         top: 0;
-        left: 0; */
+        top: 0;
+        left: 0;
     }
 
     .win-container {
