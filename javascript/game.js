@@ -1207,7 +1207,7 @@ function gameOver() {
         }, 1000);
         enemy.classList.add("new-power-up");
         setTimeout(() => {
-            enemy.setAttribute('src','images/Power-ups/cpu.png');
+            enemy.setAttribute('src','images/power-ups/cpu.png');
             enemy.style.cursor = "pointer";
         }, 1000);
 
