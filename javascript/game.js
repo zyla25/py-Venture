@@ -1228,7 +1228,7 @@ let yesBtn = document.getElementById('try-yes-btn')
 
 yesBtn.addEventListener('click', function() {
    yesBtn.setAttribute("href", "level1.html");
-}
+});
 
 
 
