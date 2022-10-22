@@ -1227,7 +1227,7 @@ function gameOver() {
 let yesBtn = document.getElementById('try-yes-btn')
 
 yesBtn.addEventListener('click', function() {
-   yesBtn.setAttribute("href", "level1.html");
+   yesBtn.setAttribute("href", "https://zyla25.github.io/py-Venture/level1.html");
 }
 
 
