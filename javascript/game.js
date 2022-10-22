@@ -1212,12 +1212,12 @@ function gameOver() {
         }, 1000);
 
         enemy.addEventListener("click", ()=>{
-            winModal.style.display = "flex";
+            winModal.style.zIndex = "99";
             winContainer.style.display = "flex";
         });
 
     } else if(arviHealth <= 0) {
-        winModal.style.display = "flex";
+        winModal.style.zIndex = "99";
         loseContainer.style.display = "flex";
     }
 }
