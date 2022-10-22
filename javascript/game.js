@@ -865,7 +865,7 @@ submit.addEventListener("click", function(){
                     if(randNumber<= 25) {
                         enemyAttackArvi();  
                         if(arviHealth <= 0 || enemyHealth <= 0) {
-                            setTimeout(gameOver, 1000);
+                            setTimeout(gameOver, 9000);
                         } else {
                             setTimeout(newChallenge, 6000);         
                         }
@@ -874,7 +874,7 @@ submit.addEventListener("click", function(){
                         enemyAttackArvi();
 
                         if(arviHealth <= 0 || enemyHealth <= 0) {
-                            setTimeout(gameOver, 1000);
+                            setTimeout(gameOver, 9000);
                         } else {
                             setTimeout(newChallenge, 6000);         
                         }
@@ -904,7 +904,7 @@ submit.addEventListener("click", function(){
                     }, 6200);
 
                     if(arviHealth <= 0 || enemyHealth <= 0) {
-                        setTimeout(gameOver, 1000);
+                        setTimeout(gameOver, 9000);
                     } else {
                         setTimeout(newChallenge, 6000); 
                     }
