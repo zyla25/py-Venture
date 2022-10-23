@@ -335,22 +335,22 @@ let enemyObject = [
 
             {    // Question 8
                 questionType: 2, //Trial for Input type Question
-                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, imitate this output: "We’re almost done!"',
-                question: 'Let us code together! </br> print("<input type="text" class="input" id="input" style= "width: 20vw;">")',
-                inputAnswer: "Let us code together!",
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, imitate this output: <br>"We’re almost done!"',
+                question: 'print("We’re almost <input type="text" class="input" id="input" style= "width: 20vw;">!")',
+                inputAnswer: "done",
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "Let us code together!";
+                    correctContainer.innerHTML = "We’re almost done!";
                 }
 
             }, 
 
             {    // Question 9
                 questionType: 2, //Trial for Input type Question
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, imitate this output using escape character '\\n' </br>Hey there Coder! </br>You can do this!",
-                question: 'print("Hey there Coder!<input type="text" class="input" id="input" style= "width: 10vw;">You can do this!")',
-                inputAnswer: "\\n",
+                instruction: '<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, imitate this output: <br> "Good Job"',
+                question: 'print("<input type="text" class="input" id="input" style= "width: 10vw;">")',
+                inputAnswer: "Good Job",
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "Hey there Coder!</br>You can do this!";
+                    correctContainer.innerHTML = "Good Job";
                 }
 
             }, 
