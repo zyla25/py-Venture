@@ -177,9 +177,9 @@ let enemyObject = [
                 firstOption: "New Level!",
                 secondOption: "Level New!",
                 thirdOption: "Error",
-                uniqueStyle1: "2.3vw",
-                uniqueStyle2: "2.3vw",
-                uniqueStyle3: "2.5vw",
+                uniqueStyle1: "2vw",
+                uniqueStyle2: "2vw",
+                uniqueStyle3: "2.3vw",
             
                 firstAnswer: function() {
                     correctAnswer = 1;
@@ -280,7 +280,7 @@ let enemyObject = [
             }, 
 
             {    // Question 5
-                questionType: 1,
+                questionType: 2,
                 instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, complete this code to get this output: ",
                 question: 'print(<input type="text" class="input" id="input" style= "width: 10vw;">What is missing in Challenge 5?"',
                 inputAnswer: '""',
@@ -292,7 +292,7 @@ let enemyObject = [
             {    // Question 6
                 questionType: 1,
                 instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, complete this code to get this output: "What is missing?"',
-                question: 'print(<span class="span1" id="span1"></span>What isvmissing?<span class="span2" id="span2"></span>)',
+                question: 'print(<span class="span1" id="span1"></span>What is missing?<span class="span2" id="span2"></span>)',
                 firstOption: "-     -",
                 secondOption: '"     "',
                 thirdOption: "*     *",
@@ -347,7 +347,7 @@ let enemyObject = [
             {    // Question 9
                 questionType: 2, //Trial for Input type Question
                 instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, imitate this output: <br> "Good Job"',
-                question: 'print("<input type="text" class="input" id="input" style= "width: 10vw;">")',
+                question: 'print("<input type="text" class="input" id="input" style= "width: 15vw;">")',
                 inputAnswer: "Good Job",
                 correctAnswer: function() {
                     correctContainer.innerHTML = "Good Job";
