@@ -283,7 +283,7 @@ let enemyObject = [
                 questionType: 1,
                 instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, complete this code to get this output: ",
                 question: 'print(<input type="text" class="input" id="input" style= "width: 10vw;">What is missing in Challenge 5?"',
-                inputAnswer: """,
+                inputAnswer: '""',
                 correctAnswer: function() {
                     correctContainer.innerHTML = "What is missing in Challenge 5?";
                 }
@@ -293,26 +293,29 @@ let enemyObject = [
                 questionType: 1,
                 instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, complete this code to get this output: "What is missing?"',
                 question: 'print(<span class="span1" id="span1"></span>What isvmissing?<span class="span2" id="span2"></span>)',
-                firstOption: "line",
-                secondOption: "command",
-                thirdOption: "variable",
+                firstOption: "-     -",
+                secondOption: '"     "',
+                thirdOption: "*     *",
                 uniqueStyle1: "2.5vw",
-                uniqueStyle2: "2vw",
-                uniqueStyle3: "2vw",
+                uniqueStyle2: "2.5vw",
+                uniqueStyle3: "2.5vw",
             
-                firstAnswer: function() {
-                    correctAnswer = 1;
-                    document.getElementById('answerHere').innerHTML = "line";
-                },
-
-                secondAnswer: function() {
+               firstAnswer: function() {
                     correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "command";
+                    span1.innerHTML = enemyObject[level].questionsObject[questionNumber].firstOption[0];
+                    span2.innerHTML = enemyObject[level].questionsObject[questionNumber].firstOption[6];
                 },
-
+        
+                secondAnswer: function() {
+                    correctAnswer = 1;
+                    span1.innerHTML = enemyObject[level].questionsObject[questionNumber].secondOption[0];
+                    span2.innerHTML = enemyObject[level].questionsObject[questionNumber].secondOption[6];
+                },
+        
                 thirdAnswer: function() {
                     correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "variable";
+                    span1.innerHTML = enemyObject[level].questionsObject[questionNumber].thirdOption[0];
+                    span2.innerHTML = enemyObject[level].questionsObject[questionNumber].thirdOption[6];
                 },
 
                 correctAnswer: function() {
