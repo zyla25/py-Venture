@@ -182,12 +182,12 @@ let enemyObject = [
                 uniqueStyle3: "2.5vw",
             
                 firstAnswer: function() {
-                    correctAnswer = 0;
+                    correctAnswer = 1;
                     document.getElementById('answerHere').innerHTML = "New Level!";
                 },
 
                 secondAnswer: function() {
-                    correctAnswer = 1;
+                    correctAnswer = 0;
                     document.getElementById('answerHere').innerHTML = "Level New!";
                 },
 
@@ -202,52 +202,45 @@ let enemyObject = [
             },
 
             {    // Question 2
-                // questionType: 2, //Trial for Input type Question
-                // question: '<input type="text" class="input" id="input">("Hello World")',
-                // inputAnswer: "print",
-                // correctAnswer: function() {
-                //     correctContainer.innerHTML = "Hello World";
-                // }
-
                 questionType: 1,
                 // question: "print<span class='span1' id='span1'></span>Python is a Programming Language<span class='span2' id='span2'></span>",
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, display “Welcome to the world of code”",
-                question: '<span id="answerHere" style= "font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;">_______</span> (“Welcome the the world of code”)',
-                firstOption: "print",
+                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> print(‘’This is level 2’’)",
+                question: 'print("Good Luck")',
+                firstOption: "Good Luck",
                 secondOption: "output",
                 thirdOption: "display",
-                uniqueStyle1: "2.3vw",
+                uniqueStyle1: "2vw",
                 uniqueStyle2: "2vw",
-                uniqueStyle3: "1.6vw",
+                uniqueStyle3: "2vw",
             
                 firstAnswer: function() {
-                    correctAnswer = 1;
-                    document.getElementById('answerHere').innerHTML = "print";
+                    correctAnswer = 0;
+                    document.getElementById('answerHere').innerHTML = "'Good Luck'";
                 },
 
                 secondAnswer: function() {
                     correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "output";
+                    document.getElementById('answerHere').innerHTML = "GOOD LUCK";
                 },
 
                 thirdAnswer: function() {
-                    correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "display";
+                    correctAnswer = 1;
+                    document.getElementById('answerHere').innerHTML = "Good Luck";
                 },
 
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "Welcome to the world of code";
+                    correctContainer.innerHTML = "Good Luck";
                 },
             }, 
 
             { // Question 3
                 questionType: 1,
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, what do you think is missing?”",
+                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, fill in the required function to do a multi- line statement.",
                 question: 'print<span class="span1" id="span1"></span>"Python is a programming language"<span class="span2" id="span2"></span>',
                 // question: "print (“<span id='answerHere' style= 'font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;'>_______</span>“)",
-                firstOption: "(     )",
-                secondOption: "{     }",
-                thirdOption: "[     ]",
+                firstOption: "'     '",
+                secondOption: "%     %",
+                thirdOption: "*     *",
                 uniqueStyle1: "2.3vw",
                 uniqueStyle2: "2.3vw",
                 uniqueStyle3: "2.3vw",
@@ -277,11 +270,11 @@ let enemyObject = [
 
             {    // Question 4
                 questionType: 2, //Trial for Input type Question
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, replace the “Type Here” with “Happy Coding” ",
-                question: 'print("<input type="text" class="input" id="input" value="Type Here" style= "width: 20vw;">")',
-                inputAnswer: "Happy Coding",
+                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span>Avi, complete this code to get this output: <br>What is missing?",
+                question: '<input type="text" class="input" id="input" value="Type Here" style= "width: 20vw;">("What is missing?")',
+                inputAnswer: "What is missing?",
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "Happy Coding";
+                    correctContainer.innerHTML = "What is missing";
                 }
 
             }, 
