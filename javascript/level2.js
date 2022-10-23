@@ -325,7 +325,7 @@ let enemyObject = [
 
             {    // Question 7
                 questionType: 2, //Trial for Input type Question
-                instruction: '<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, complete this code to get this output: What is missing in Challenge 7?',
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, complete this code to get this output: What is missing in Challenge 7?',
                 question: 'print("What is missing in <input type="text" class="input" id="input" style= "width: 20vw;">?")',
                 inputAnswer: "Challenge 7",
                 correctAnswer: function() {
