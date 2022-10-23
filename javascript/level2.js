@@ -272,7 +272,7 @@ let enemyObject = [
                 questionType: 2, //Trial for Input type Question
                 instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span>Avi, complete this code to get this output: <br>What is missing?",
                 question: '<input type="text" class="input" id="input" value="Type Here" style= "width: 20vw;">("What is missing?")',
-                inputAnswer: "What is missing?",
+                inputAnswer: "print",
                 correctAnswer: function() {
                     correctContainer.innerHTML = "What is missing?";
                 }
@@ -281,39 +281,18 @@ let enemyObject = [
 
             {    // Question 5
                 questionType: 1,
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, did you know that you can assign “Welcome Coder!” to the variable",
-                question: 'welcome_message = "<span id="answerHere" style= "font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;">_______</span>"</br>print(welcome_message)',
-                firstOption: "Welcome Coder!",
-                secondOption: "Sup Coder!",
-                thirdOption: "Hey there Coder!",
-                uniqueStyle1: "1.5vw",
-                uniqueStyle2: "1.5vw",
-                uniqueStyle3: "1.5vw",
-            
-                firstAnswer: function() {
-                    correctAnswer = 1;
-                    document.getElementById('answerHere').innerHTML = "Welcome Coder";
-                },
-
-                secondAnswer: function() {
-                    correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "Sup Coder!";
-                },
-
-                thirdAnswer: function() {
-                    correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "Hey there Coder!";
-                },
-
+                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, complete this code to get this output: ",
+                question: 'print(<input type="text" class="input" id="input" style= "width: 10vw;">What is missing in Challenge 5?"',
+                inputAnswer: """,
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "Welcome Coder!";
-                },
+                    correctContainer.innerHTML = "What is missing in Challenge 5?";
+                }
             }, 
 
             {    // Question 6
                 questionType: 1,
-                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, input the correct variable to display the text that is set in the variable "line".',
-                question: 'line = "You are Finished!"</br>print(<span id="answerHere" style= "font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;">_______</span>)',
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, complete this code to get this output: "What is missing?"',
+                question: 'print(<span class="span1" id="span1"></span>What isvmissing?<span class="span2" id="span2"></span>)',
                 firstOption: "line",
                 secondOption: "command",
                 thirdOption: "variable",
