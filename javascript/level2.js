@@ -346,7 +346,7 @@ let enemyObject = [
 
             {    // Question 9
                 questionType: 2, //Trial for Input type Question
-                instruction: '<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, imitate this output: <br> "Good Job"',
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, imitate this output: <br> "Good Job"',
                 question: 'print("<input type="text" class="input" id="input" style= "width: 10vw;">")',
                 inputAnswer: "Good Job",
                 correctAnswer: function() {
