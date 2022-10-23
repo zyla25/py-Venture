@@ -324,36 +324,18 @@ let enemyObject = [
             }, 
 
             {    // Question 7
-                questionType: 1,
-                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, identify and fill in what is missing in this code to get this output. Python is Fun!',
-                question: 'print(Python is Fun!)',
-                firstOption: "*     *",
-                secondOption: '"     "',
-                thirdOption: "@     @",
-                uniqueStyle1: "2.5vw",
-                uniqueStyle2: "2.5vw",
-                uniqueStyle3: "2.5vw",
-            
-                firstAnswer: function() {
-                    correctAnswer = 0;
-                },
-
-                secondAnswer: function() {
-                    correctAnswer = 1;
-                },
-
-                thirdAnswer: function() {
-                    correctAnswer = 0;
-                },
-
+                questionType: 2, //Trial for Input type Question
+                instruction: '<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, complete this code to get this output: What is missing in Challenge 7?',
+                question: 'print("What is missing in <input type="text" class="input" id="input" style= "width: 20vw;">?")',
+                inputAnswer: "Challenge 7",
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "Python is Fun!";
-                },
+                    correctContainer.innerHTML = "What is missing in Challenge 7?";
+                }
             }, 
 
             {    // Question 8
                 questionType: 2, //Trial for Input type Question
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, imitate this output.",
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, imitate this output: "We’re almost done!"',
                 question: 'Let us code together! </br> print("<input type="text" class="input" id="input" style= "width: 20vw;">")',
                 inputAnswer: "Let us code together!",
                 correctAnswer: function() {
