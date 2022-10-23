@@ -204,11 +204,11 @@ let enemyObject = [
             {    // Question 2
                 questionType: 1,
                 // question: "print<span class='span1' id='span1'></span>Python is a Programming Language<span class='span2' id='span2'></span>",
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> print(‘’This is level 2’’)",
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> print("Good Luck")',
                 question: 'print("Good Luck")',
-                firstOption: "Good Luck",
-                secondOption: "output",
-                thirdOption: "display",
+                firstOption: "'Good Luck'",
+                secondOption: "GOOD LUCK",
+                thirdOption: "Good Luck",
                 uniqueStyle1: "2vw",
                 uniqueStyle2: "2vw",
                 uniqueStyle3: "2vw",
@@ -274,7 +274,7 @@ let enemyObject = [
                 question: '<input type="text" class="input" id="input" value="Type Here" style= "width: 20vw;">("What is missing?")',
                 inputAnswer: "What is missing?",
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "What is missing";
+                    correctContainer.innerHTML = "What is missing?";
                 }
 
             }, 
