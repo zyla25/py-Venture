@@ -172,32 +172,32 @@ let enemyObject = [
             { // Question 1           
                 questionType: 1,
                 // question: "print<span class='span1' id='span1'></span>Python is a Programming Language<span class='span2' id='span2'></span>",
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, display “Hello Avi!”",
-                question: "print (“<span id='answerHere' style= 'font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;'>_______</span>“)",
-                firstOption: "Hi Avi!",
-                secondOption: "Hello Avi!",
-                thirdOption: "Hey there, Avi!",
+                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, what will be the output of this code?",
+                question: "print(“New Level!”)",
+                firstOption: "New Level!",
+                secondOption: "Level New!",
+                thirdOption: "Error",
                 uniqueStyle1: "2.3vw",
-                uniqueStyle2: "2vw",
-                uniqueStyle3: "1.6vw",
+                uniqueStyle2: "2.3vw",
+                uniqueStyle3: "2.5vw",
             
                 firstAnswer: function() {
                     correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "Hi Avi!";
+                    document.getElementById('answerHere').innerHTML = "New Level!";
                 },
 
                 secondAnswer: function() {
                     correctAnswer = 1;
-                    document.getElementById('answerHere').innerHTML = "Hello Avi!";
+                    document.getElementById('answerHere').innerHTML = "Level New!";
                 },
 
                 thirdAnswer: function() {
                     correctAnswer = 0;
-                    document.getElementById('answerHere').innerHTML = "Hey there!, Avi";
+                    document.getElementById('answerHere').innerHTML = "Error";
                 },
 
                 correctAnswer: function() {
-                    correctContainer.innerHTML = "Hello Avi!";
+                    correctContainer.innerHTML = "New Level!";
                 },
             },
 
