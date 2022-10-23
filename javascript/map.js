@@ -142,6 +142,11 @@ level1.addEventListener("click", function() {
     startModal.style.zIndex = "20";
 });
 
+let level1 = document.getElementById("lvl2");
+level2.addEventListener("click", function() {
+    startBtn.setAttribute("href", "level2.html");
+    startModal.style.zIndex = "20";
+});
 
  
 
