@@ -205,7 +205,7 @@ let enemyObject = [
                 questionType: 1,
                 // question: "print<span class='span1' id='span1'></span>Python is a Programming Language<span class='span2' id='span2'></span>",
                 instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> print("Good Luck")',
-                question: 'print("<span id='answerHere' style= 'font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;'>_______</span>")',
+                question: 'print("<span id="answerHere" style= "font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;">_______</span>")',
                 firstOption: "'Good Luck'",
                 secondOption: "GOOD LUCK",
                 thirdOption: "Good Luck",
