@@ -204,14 +204,14 @@ let enemyObject = [
             {    // Question 2
                 questionType: 1,
                 // question: "print<span class='span1' id='span1'></span>Python is a Programming Language<span class='span2' id='span2'></span>",
-                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> print("Good Luck")',
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, display "Good Luck",
                 question: 'print("<span id="answerHere" style= "font-family: sans-serif; color: black; font-weight: 900; text-decoration: underline;">_______</span>")',
                 firstOption: "'Good Luck'",
                 secondOption: "GOOD LUCK",
                 thirdOption: "Good Luck",
-                uniqueStyle1: "2vw",
-                uniqueStyle2: "2vw",
-                uniqueStyle3: "2vw",
+                uniqueStyle1: "1.8vw",
+                uniqueStyle2: "1.8vw",
+                uniqueStyle3: "1.8vw",
             
                 firstAnswer: function() {
                     correctAnswer = 0;
