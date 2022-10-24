@@ -270,8 +270,8 @@ let enemyObject = [
 
             {    // Question 4
                 questionType: 2, //Trial for Input type Question
-                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span>Avi, complete this code to get this output: <br>What is missing?",
-                question: '<input type="text" class="input" id="input" style= "width: 20vw;">("What is missing?")',
+                instruction: "<span style = 'color:rgb(71, 9, 9);'>Instruction:</span> Avi, complete this code to get this output: <br>What is missing?",
+                question: '<input type="text" class="input" id="input" style= "width: 10vw;">("What is missing?")',
                 inputAnswer: "print",
                 correctAnswer: function() {
                     correctContainer.innerHTML = "What is missing?";
@@ -346,7 +346,7 @@ let enemyObject = [
 
             {    // Question 9
                 questionType: 2, //Trial for Input type Question
-                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, imitate this output: <br> "Good Job"',
+                instruction: '<span style = "color:rgb(71, 9, 9);">Instruction:</span> Avi, imitate this output: "Good Job"',
                 question: 'print("<input type="text" class="input" id="input" style= "width: 15vw;">")',
                 inputAnswer: "Good Job",
                 correctAnswer: function() {
