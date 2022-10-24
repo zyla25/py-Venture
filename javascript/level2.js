@@ -1182,9 +1182,14 @@ function gameOver() {
 }
 
 let yesBtn = document.getElementById('try-yes-btn')
+let noBtn = document.getElementById('try-no-btn')
 
 yesBtn.addEventListener('click', function() {
-    window.location.href="level1.html";
+    window.location.href="level2.html";
+});
+
+noBtn.addEventListener('click', function() {
+    window.location.href="map.html";
 });
 
 
