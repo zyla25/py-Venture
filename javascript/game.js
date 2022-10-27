@@ -4,6 +4,8 @@
 //     return "Changes you made may not be saved.";
 // }
 
+let bgMusic = new Audio ("audio/bgm/Battle.mp3");
+
 let timing = 0;
 let percentage = 0;
 let loadInterval;
@@ -488,6 +490,8 @@ rightBtn.addEventListener('click', ()=> {
 
 
 startBtn.addEventListener("click", function() {
+    bgMusic.play();
+    bgMusic.setAttribute("loop", "loop");
     lectureContainer.style.display = "none";
 
     
